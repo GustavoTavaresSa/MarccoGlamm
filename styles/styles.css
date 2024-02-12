@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family:'Montserrat', sans-serif;
+    color: #AF7A56;
+    margin: 0;
+    background-color: #FFFAF3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    background: #AF7A56;
+    padding-inline: 16px;
+
+    position: fixed;
+    width: 100%;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 70%;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 88px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+  }
+  
+  .hero {
+    background-color: #FFFAF3;
+    padding: 0px 55px;
+  }
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 4px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+
+  }
+
+  /*------------INICIO BODY------------*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 1000;
+
+}
+.whatsapp-icon img {
+    height: auto;
+    cursor: pointer;
+}
+
+/*-------------------------------------CONTAINER 1----------------------------------------------------------*/
+#container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 55px 55px 0px;
+}
+
+#container-1 img{
+    width: 550px;
+}
+
+#texts-container-1{
+    width: 50%;
+    margin-top: 60px;
+}
+
+h1{
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+#texts-container-1 p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/*..............................................CONTAINER SERVICES.............................................................*/
+
+#container-services{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+#container-services span{
+    margin-bottom: 10px;
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+}
+#container-services h1{
+    margin: 0;
+}
+#cards-services{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px #aaaaaa;
+    text-align: center;
+    width: 300px;
+    color: black;
+    padding: 10px;
+    margin: 0 25px;
+    align-items: center;
+}
+
+.card img{
+    width: 150px;
+    padding: 3px;
+}
+
+.card p{
+    color: gray;
+    margin-top: 5px;
+}
+.card h5{
+    font-size: 25px;
+    margin: 25px 10px 8px 15px;
+}
+
+.card span{
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+    margin: 10px 0px 5px 0px;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+
+.logo-cc{
+    width: 29px;
+}
+
+.little-line{
+    width: 43%;
+    height: 2px;
+    background-color: #e2a78ab5;
+
+}
+
+/*........................................CONTAINER ABOUTME.................................................................*/
+
+#container-aboutme{
+    display: flex;
+    padding: 20px 40px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+aside p{
+    display: flex;
+}
+
+aside img{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#container-aboutme span{
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+
+}
+
+#marco-aboutme{
+    width: 500px;
+    height: max-content;
+}
+/*............................................PORTFOLIO......................................*/
+
+#title-portfolio{
+    display: flex;
+    justify-content: center;
+    margin: -50px 0 35px 0;
+}
+
+#container-portfolio{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.image-portfolio{
+    width: 300px;
+    padding: 5px;
+}
+
+/*...........................FOOTER.......................................................*/
+
+footer{
+    display: flex;
+    background-color: #AF7A56;
+    height: 100px;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+   
+}
+
+.logos-footer{
+   height: 30px;
+   padding: 33px;
+}
+  
+
+
+
+
+  @media (max-width: 750px) {
+    .hero{
+        padding: 10px;
+    }
+
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #AF7A56;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    /*CONTAINER 1 MOBILE..........................................................................................*/
+    #container-1{
+        flex-direction: column-reverse;
+        padding: 10px 0;
+        align-items: center;
+    }
+    #container-1 img{
+        padding-top: 75px;
+        width: 85%;
+        max-width: 440px;
+    }
+    #texts-container-1{
+        width: 85%;
+        margin-top: 15px;
+    }
+    #texts-container-1 h1{
+        font-size: 22px;
+    }
+    #texts-container-1 p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    /*......................................ABOUTME MOBILE.............................................................*/
+
+    #container-services{
+        margin: 25px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+    #cards-services{
+        margin-top: 10px;
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .card{
+        margin: 5px 0;    
+        width: 80%;
+    }
+    .card h5{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .texts-card{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 3px;
+    }
+    .card span{
+        width: 75%;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .logo-cc{
+        width: 17px;
+    }
+
+    .divider{
+        padding: 40px 10px;
+    }
+    #container-aboutme{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+    #container-aboutme img {
+        width: 300px;
+    }
+
+    #contanier-aboutme p{
+        margin-top: 50px;
+    }
+    .image-portfolio{
+        width: 45%;
+        padding: 5px;
+    }
+
+    #title-portfolio{
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*...........................FOOTER MOBILE.......................................................*/
+
+    footer{
+        height: 100px;
+        width: 100%;
+        margin-top: 45px;
+    
+    }
+
+
+
+
+}
+
+
+
